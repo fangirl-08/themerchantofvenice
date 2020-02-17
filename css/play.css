@@ -25,13 +25,27 @@ p.playtitle {
   padding: .6rem;
   color:black;
   font-family: verdana, sans-serif;
-  font-size:.8em;
-  z-index: 50;
+  font-size:32;
+  z-index: 20;
   margin:0;
 }
 section.play {
 	border-style:solid;
 }
+
+a.menu {
+  position:fixed;
+  top:0;
+  right:0;
+  color:white;
+  padding: .6rem;
+  color:white;
+  font-family: verdana, sans-serif;
+  font-size:.8em;
+  z-index: 20;
+  margin:0;
+}
+
 ul.TOC-Heading-1 {
 	color:#000000;
 	font-family:"Avenir Medium", sans-serif;
