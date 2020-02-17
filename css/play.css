@@ -1,0 +1,351 @@
+body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
+	margin:0;
+	padding:0;
+	border-width:0;
+}
+body {
+	-epub-hyphens:auto;
+	float: center;
+	margin-left: 25px;
+	margin-right: 25px;
+	max-width: 100%;
+
+}
+div.Basic-Graphics-Frame {
+	border-color:#000000;
+	border-width:1px;
+	border-style:solid;
+
+}
+p.playtitle {
+  position:fixed;
+  left:0;
+  top:0;
+  /* height:1rem; */
+  padding: .6rem;
+  color:black;
+  font-family: verdana, sans-serif;
+  font-size:.8em;
+  z-index: 50;
+  margin:0;
+}
+section.play {
+	border-style:solid;
+}
+ul.TOC-Heading-1 {
+	color:#000000;
+	font-family:"Avenir Medium", sans-serif;
+	font-size:16px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:500;
+	line-height:1.129;
+	margin-bottom:6px;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+
+}
+p.TOC-Heading-2 {
+	color:#000000;
+	font-family:Avenir, sans-serif;
+	font-size:16px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.2;
+	margin-bottom:0;
+	margin-left:23px;
+	margin-right:0;
+	margin-top:0;
+
+}
+a {
+  text-decoration: none;
+}
+
+nav {
+    font-family: Alegreya;
+}
+
+ul {
+  background: darkorange;
+    list-style: none;
+    margin: 0;
+    padding-left: 0
+		position: r
+}
+
+li {
+    color: #fff;
+  background: darkorange;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+li a {
+  color: #fff;
+}
+
+li:hover {
+    background: red;
+    cursor: pointer;
+}
+
+ul li ul {
+    background: orange;
+    visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+    position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+    left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul, /* this is the line we add */
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+    clear: both;
+  width: 100%;
+}
+h1.act {
+	-epub-hyphens:none;
+	color:#000000;
+	font-family:Alegreya, serif;
+	font-size:24px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:1.722;
+	margin-bottom:6px;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+text-align: center;
+}
+p.character {
+	-epub-hyphens:none;
+	color:#7b78b1;
+	font-family:Leander, serif;
+	font-size:16px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.182;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:9px;
+
+}
+p.charactername {
+	-epub-hyphens:none;
+	color:#283583;
+	font-family:"Georgia", sans-serif;
+	font-size:16px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.333;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:6px;
+	margin-top:0;
+
+}
+h1.dramatishead {
+	-epub-hyphens:none;
+	color:#4c4c4c;
+	font-family:Georgia, serif;
+	font-size:18px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:2;
+	margin: 60px;
+	text-align: center;
+}
+h2.firstscene {
+	-epub-hyphens:none;
+	color:#283583;
+	font-family:Alegreya, serif;
+	font-size:20px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:1.313;
+	margin-bottom:6px;
+	margin-left:0;
+	margin-right:0;
+	margin-top:9px;
+	text-align: center;
+
+}
+p.lastlineinverse {
+	-epub-hyphens:none;
+	color:#000000;
+	font-family:Alegreya, serif;
+	font-size:16px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.1;
+	margin-bottom:17px;
+	margin-left:54px;
+	margin-right:0;
+	margin-top:0;
+	text-indent:-11px;
+
+}
+h2.location {
+	-epub-hyphens:none;
+	color:#283583;
+	font-family:Alegreya, serif;
+	font-size:20px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:1;
+	margin-bottom:6px;
+	margin-left:0;
+	margin-right:0;
+	margin-top:9px;
+
+}
+p.prose {
+	-epub-hyphens:none;
+	color:#000000;
+	font-family:Alegreya, serif;
+	font-size:16px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1;
+	margin-bottom:0;
+	margin-left:43px;
+	margin-right:0;
+	margin-top:0;
+
+}
+h2.scene {
+	-epub-hyphens:none;
+	color:#dc674c;
+	font-family:Alegreya, serif;
+	font-size:20px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:1.167;
+	margin-bottom:6px;
+	margin-left:0;
+	margin-right:0;
+	margin-top:9px;
+text-align:center;
+}
+p.song {
+	-epub-hyphens:none;
+	color:#000000;
+	font-family:Alegreya, serif;
+	font-size:16px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.2;
+	margin-bottom:0;
+	margin-left:122px;
+	margin-right:0;
+	margin-top:0;
+
+}
+h2.stagedirection {
+	-epub-hyphens:none;
+	color:#000000;
+	font-family:Alegreya, serif;
+	font-size:20px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:1.083;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:9px;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.verseline {
+	-epub-hyphens:none;
+	color:#000000;
+	font-family:Alegreya, serif;
+	font-size:16px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.1;
+	margin-bottom:0;
+	margin-left:54px;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:-11px;
+	text-transform:none;
+	widows:1;
+}
+span.character_role {
+	color:#d47db2;
+}
+span.italic {
+	font-style:italic;
+	font-weight:normal;
+}
+span.stage_directions_inline {
+	color:#009fe3;
+	font-variant:normal;
+	text-transform:none;
+}
+p.ParaOverride-1 {
+	-epub-hyphens:none;
+	margin-bottom:6px;
+	margin-top:9px;
+	page-break-before:always;
+	text-align:center;
+}
+p.ParaOverride-2 {
+	text-align:center;
+}
+span.CharOverride-1 {
+	color:#4c4c4c;
+	font-family:Georgia, serif;
+	font-size:20px;
+	font-style:normal;
+	font-weight:bold;
+	text-decoration:underline;
+}
+span.CharOverride-2 {
+	font-size:12px;
+}
+div._idGenObjectStyleOverride-1 {
+	border-width:0px;
+}
