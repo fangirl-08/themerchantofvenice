@@ -1,81 +1,44 @@
-/* This stylesheet is where to add styles for your Shakespeare Play */
-/*We usually add something general for the body*/
+
 body {
-  /*your style rules go in here */
+  font-family: verdana, arial, sans-serif;
+padding-left:30px;
+padding-right:30px;
 }
 
-/*Here follows the class names that you will have in your html*/
-/*You may have more if you added styles in InDesign*/
-/*You need to add the style attributes between the curly brackets*/
+.content {
+  margin auto: 10%
+  border: 10px
+}
+h1 {
+color:#34ccb1 ;
+font-family: georgia, serif;
+font-size: 5vw
 
-/* the following may not be used  */
+}
+ul {padding-top: 30px;
+padding-left: 30px;
+}
+p {margin: 20px;
+padding-right: 30px;
+padding-top: 10px
+}
 
-section.cover {
-text-align:center;
-width:70%;
+div.everything {
+  padding: 10px 10px;
+  margin: 10px auto;
+  width: 90%;
+  border:3px solid black;
+  background: grey;
+}
+
+img {
+  display: block;
+max-width: 20%;
 margin: 20px auto;
-}
-
-img.playimage {
-/* you will need a width attribute in here */
-max-width:40%;
-padding:20px auto;
-text-align: center;
-}
-
-img.shakespeareimage {
-/* you will need a width attribute in here */
-max-width:40%;
-padding:20px auto;
-}
-
-/* If you ahe created any new stlyes in InDesign and used export tags then you need to add them here */
-
-body {
-}
-section.dramatis {
-}
-section.play {
-}
-div.sceneImage {
-}
-h1.act {
+float:right;
+padding-left: 30px;
+padding-right:30px;
 
 }
-p.character {
 
-}
-p.charactername {
-
-}
-h1.dramatishead {
-
-}
-h2.firstscene {
-
-}
-h2.location {
-
-}
-p.play_location {
-
-}
-p.prose {
-
-}
-h2.scene {
-
-}
-p.song {
-
-}
-h2.stagedirection {
-
-}
-p.verseline {
-
-}
-span.character_role {
-}
-span.stage_directions_inline {
-}
+media screen and (min-width: 600 px)

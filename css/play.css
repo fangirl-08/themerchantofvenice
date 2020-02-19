@@ -11,13 +11,8 @@ body {
 	max-width: 100%;
 
 }
-div.Basic-Graphics-Frame {
-	border-color:#000000;
-	border-width:1px;
-	border-style:solid;
 
-}
-p.playtitle {
+p.play_title {
   position:fixed;
   left:0;
   top:0;
@@ -32,6 +27,10 @@ p.playtitle {
 section.play {
 	border-style:solid;
 }
+
+a.href {
+	color:red;}
+
 a.menu {
   position:fixed;
   top:0px;
@@ -103,9 +102,13 @@ ul {
     list-style: none;
     margin: 0;
     padding-left: 0
+		width: 0
+		top: 2rem;
 		position: r
 }
-
+#navigation:target {
+  width: 30%;
+}
 li {
     color: #fff;
   background: darkorange;
@@ -138,6 +141,7 @@ ul li ul {
   display: none;
 }
 
+
 ul li:hover > ul,
 ul li:focus-within > ul, /* this is the line we add */
 ul li ul:hover {
@@ -149,6 +153,10 @@ ul li ul:hover {
 ul li ul li {
     clear: both;
   width: 100%;
+}
+
+#navigation:target {
+  width: auto;
 }
 h1.act {
 	-epub-hyphens:none;
