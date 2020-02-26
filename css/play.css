@@ -5,31 +5,38 @@ body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
 }
 body {
 	-epub-hyphens:auto;
-	float: center;
+
 	margin-left: 25px;
 	margin-right: 25px;
 	max-width: 100%;
 
 }
 
-p.play_title {
+p.playtitle {
   position:fixed;
   left:0;
-  top:0;
+  top:10px;
   /* height:1rem; */
   padding: .6rem;
-  color:black;
+  color:white;
   font-family: verdana, sans-serif;
-  font-size:32;
   z-index: 20;
   margin:0;
 }
+
+
+
 section.play {
-	border-style:solid;
+	border-style:none;
+}
+/* This extra style rule here makes sure that the linked location is not hidden inder the fixed header */
+h1 a, h2 a {
+  margin-top: -2.4rem;
+  padding-bottom: 2.4rem;
+  display:block;
+  background: white;
 }
 
-a.href {
-	color:red;}
 
 a.menu {
   position:fixed;
@@ -52,12 +59,16 @@ a.menu:hover {
   position: fixed;
   top:0;
   left:0;
-  float: right;
   width:100%;
   background: black;
   font-family: verdana, sans-serif;
   font-size:.8em;
-  height:2.4rem;
+  height:3.5rem;
+}
+
+#navigation {
+	float:right;
+
 }
 
 ul.TOC-Heading-1 {
@@ -101,63 +112,19 @@ ul {
   background: darkorange;
     list-style: none;
     margin: 0;
-    padding-left: 0
-		width: 0
+    padding-left: 0;
 		top: 2rem;
-		position: r
+
 }
 #navigation:target {
   width: 30%;
 }
-li {
-    color: #fff;
-  background: darkorange;
-    display: block;
-    float: left;
-    padding: 1rem;
-    position: relative;
-    text-decoration: none;
-  transition-duration: 0.5s;
-}
 
-li a {
-  color: #fff;
-}
-
-li:hover {
-    background: red;
-    cursor: pointer;
-}
-
-ul li ul {
-    background: orange;
-    visibility: hidden;
-  opacity: 0;
-  min-width: 5rem;
-    position: absolute;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
-    left: 0;
-  display: none;
-}
-
-
-ul li:hover > ul,
-ul li:focus-within > ul, /* this is the line we add */
-ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-ul li ul li {
-    clear: both;
-  width: 100%;
-}
 
 #navigation:target {
   width: auto;
 }
+
 h1.act {
 	-epub-hyphens:none;
 	color:#000000;
@@ -170,19 +137,19 @@ h1.act {
 	margin-bottom:6px;
 	margin-left:0;
 	margin-right:0;
-	margin-top:0;
+padding-top: 20px;
 text-align: center;
 }
 p.character {
 	-epub-hyphens:none;
 	color:#7b78b1;
 	font-family:Leander, serif;
-	font-size:16px;
+	font-size:20px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:normal;
 	line-height:1.182;
-	margin-bottom:0;
+	margin-bottom:2px;
 	margin-left:0;
 	margin-right:0;
 	margin-top:9px;
@@ -192,12 +159,12 @@ p.charactername {
 	-epub-hyphens:none;
 	color:#283583;
 	font-family:"Georgia", sans-serif;
-	font-size:16px;
+	font-size:20px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:normal;
 	line-height:1.333;
-	margin-bottom:0;
+	margin-bottom:2px;
 	margin-left:0;
 	margin-right:6px;
 	margin-top:0;
@@ -205,9 +172,9 @@ p.charactername {
 }
 h1.dramatishead {
 	-epub-hyphens:none;
-	color:#4c4c4c;
+	color:black;
 	font-family:Georgia, serif;
-	font-size:18px;
+	font-size:24px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:bold;
@@ -217,9 +184,9 @@ h1.dramatishead {
 }
 h2.firstscene {
 	-epub-hyphens:none;
-	color:#283583;
+	color:#dc674c;
 	font-family:Alegreya, serif;
-	font-size:20px;
+	font-size:23px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:bold;
@@ -266,12 +233,12 @@ p.prose {
 	-epub-hyphens:none;
 	color:#000000;
 	font-family:Alegreya, serif;
-	font-size:16px;
+	font-size:18px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:normal;
 	line-height:1;
-	margin-bottom:0;
+	margin-bottom:2px;
 	margin-left:43px;
 	margin-right:0;
 	margin-top:0;
@@ -281,7 +248,7 @@ h2.scene {
 	-epub-hyphens:none;
 	color:#dc674c;
 	font-family:Alegreya, serif;
-	font-size:20px;
+	font-size:23px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:bold;
@@ -316,33 +283,26 @@ h2.stagedirection {
 	font-variant:normal;
 	font-weight:bold;
 	line-height:1.083;
-	margin-bottom:0;
+	margin-bottom:2px;
 	margin-left:0;
 	margin-right:0;
 	margin-top:9px;
 	orphans:1;
-	page-break-after:auto;
-	page-break-before:auto;
-	text-align:left;
-	text-decoration:none;
-	text-indent:0;
-	text-transform:none;
-	widows:1;
+
 }
 p.verseline {
 	-epub-hyphens:none;
 	color:#000000;
 	font-family:Alegreya, serif;
-	font-size:16px;
+	font-size:18px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:normal;
 	line-height:1.1;
-	margin-bottom:0;
+	margin-bottom:10px;
 	margin-left:54px;
 	margin-right:0;
 	margin-top:0;
-	orphans:1;
 	page-break-after:auto;
 	page-break-before:auto;
 	text-align:left;
@@ -386,4 +346,195 @@ span.CharOverride-2 {
 }
 div._idGenObjectStyleOverride-1 {
 	border-width:0px;
+}
+
+
+
+p.playtitle {
+  position:fixed;
+  left:0;
+  top:0;
+  /* height:1rem; */
+  padding: .6rem;
+  color:white;
+  font-family: verdana, sans-serif;
+  font-size:.8em;
+  z-index: 20;
+  margin:0;
+}
+
+.playtitle a {
+	color:white;
+	font-size: 16px;
+	font-family: "Lucida Console", monospace;
+}
+
+a.menu {
+  position:fixed;
+  top:0;
+  right:0;
+  color:white;
+  padding: .6rem;
+  color:white;
+  font-family: verdana, sans-serif;
+  font-size:12px;
+  z-index: 20;
+  margin:0;
+}
+
+a.menu:hover {
+  color:red;
+  cursor:pointer;
+}
+
+
+
+.contents {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background: black;
+  font-family: verdana, sans-serif;
+  font-size:.8em;
+  height:2.4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    font-size: 1em;
+    margin: 0;
+    padding-left: 0;
+    float:right;
+    overflow: hidden;
+    background:darkorange;
+    width:0;
+    position:relative;
+    top: 2rem;
+
+}
+
+#navigation:target {
+  width: 30%;
+}
+
+li {
+    color: #fff;
+    display: block;
+    padding: .3rem .5rem;
+    position: relative;
+    text-decoration: none;
+    min-width: 4rem;
+}
+
+
+
+
+li a {
+  color: #fff;
+}
+
+li:hover a {
+    cursor: pointer;
+}
+
+
+
+ul li ul {
+  display:block;
+  width:100%;
+  padding:0;
+  left: 0;
+  font-size: .7em;
+  /* display: none; */
+  float:none;
+  margin:0;
+  position:static;
+}
+
+ul li ul li {
+min-width:4rem;
+}
+
+ul li:hover > ul, ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+
+/* now follows the media query that displays everyhing correctly on wider screens */
+
+@media only screen and (min-width: 720px) {
+
+h1.act, h1.dramatishead {
+  font-size: 200%;
+}
+
+section.play {
+	border-style:solid;
+	padding: 10px
+
+}
+
+ul {
+  width:auto;
+  float:right;
+  overflow:visible;
+  position:static;
+  top:inherit;
+
+}
+
+
+li {
+  display:inline-block;
+  height:1.2rem;
+  padding: .6rem .5rem;
+}
+
+a.menu {
+  display:none;
+}
+
+ul li ul {
+  background: rgb(120, 120, 120);
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  margin: .8rem 0;
+  padding:0;
+  left: 0;
+  float:right;
+}
+
+li:hover {
+    background: rgb(120, 120, 120);
+    cursor: pointer;
+}
+
+ul li ul li:hover {
+background: rgb(96, 99, 89);
+}
+
+li:hover a {
+  color:white;
+}
+
+#navigation:target {
+  width: auto;
+}
+
+p.prose, p.verseline {
+margin: 0 12px 0 60px;
+text-align:justify;}
+
+p.prose {
+  margin-bottom: 12px;
+}
+
 }

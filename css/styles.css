@@ -1,12 +1,13 @@
 
+
+
 body {
   font-family: verdana, arial, sans-serif;
 padding-left:30px;
 padding-right:30px;
 }
-
 .content {
-  margin auto: 10%
+
   border: 10px
 }
 h1 {
@@ -40,5 +41,3 @@ padding-left: 30px;
 padding-right:30px;
 
 }
-
-media screen and (min-width: 600 px)
