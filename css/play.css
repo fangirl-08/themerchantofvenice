@@ -36,7 +36,14 @@ h1 a, h2 a {
   display:block;
   background: white;
 }
+img.center {display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
 
+	img.portrait {
+		width:60%;
+	}
 
 a.menu {
   position:fixed;
