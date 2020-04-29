@@ -41,9 +41,27 @@ img.center {display: block;
   margin-right: auto;
   }
 
-	img.portrait {
+img.portrait {
 		width:60%;
 	}
+
+	div.video-box {
+		position: relative;
+		padding-bottom: 10%;
+		padding-top: 50%;
+		height: 60%;
+		overflow: hidden;
+		margin-bottom: 12px;
+	}
+
+div.video-box iframe {
+	display: block;
+	position: absolute;
+	top: 10%;
+	left: 0;
+	width: 60%;
+	height: 60%;
+}
 
 a.menu {
   position:fixed;
